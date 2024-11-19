@@ -5,19 +5,12 @@
     <title>Fetch from file Example</title>
 </head>
 <body>
+    
     <h1>Fetching Data from a Text File</h1>
+    
     <pre id="output"></pre>
 
-   <script>
-        fetch('data.txt')
-            .then(response => response.text())
-            .then(data => 
-            {
-                console.log(data); // Display the content to the console
-                // Display content on the page in the HTML element with id output
-                document.getElementById('output').textContent = data; // Display content on the page
-            })
-            .catch(error => console.error('Error reading file:', error));
-    </script>
+    <script src="myScript.js"></script>
+
 </body>
 </html>
